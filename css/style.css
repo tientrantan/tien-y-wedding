@@ -309,7 +309,7 @@ h1, h2, h3, h4, h5, h6, figure {
   top: 0;
   left: 0;
   right: 0;
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0.2);
 }
 .fh5co-cover > .fh5co-container {
   position: relative;
@@ -355,7 +355,7 @@ h1, h2, h3, h4, h5, h6, figure {
 
 #fh5co-counter,
 #fh5co-event {
-  height: 850px;
+  height: 880px;
   float: left;
 }
 #fh5co-counter .display-t,
@@ -1846,5 +1846,10 @@ form label {
 }
 #map {
   height: 300px;
+}
+@media screen and (max-width: 768px) {
+  padding-char {
+    display: none;
+  }
 }
 /*# sourceMappingURL=style.css.map */

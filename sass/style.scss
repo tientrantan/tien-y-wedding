@@ -460,7 +460,7 @@ h1, h2, h3, h4, h5, h6, figure {
 		left: 0;
 		right: 0;
 		bottom: 0;
-		background: rgba(0, 0, 0, .4);
+		background: rgba(0, 0, 0, .2);
 	}
 	@media screen and (max-width: $screen-sm) {
 		height: inherit;
@@ -1316,7 +1316,7 @@ form {
 		left: 0;
 		right: 0;
 		bottom: 0;
-		background: rgba(0, 0, 0, .4);
+		background: rgba(0, 0, 0, .2);
 	}
 	.fh5co-heading {
 		h2 {
