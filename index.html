@@ -573,30 +573,7 @@
 			
 		</div>
 	</div> -->
-		<div id="fh5co-services" class="fh5co-section-gray">
-			<div class="container">
-
-				<div class="row animate-box">
-					<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-						<h2>Hướng dẫn vị trí</h2>
-						<div id="map"></div>
-					</div>
-				</div>
-
-				<!-- <div class="row">
-				<div class="col-md-8 col-md-offset-2">
-					<div class="feature-left animate-box" data-animate-effect="fadeInLeft">
-						
-					</div>					
-
-				</div>
-
-				
-			</div> -->
-
-
-			</div>
-		</div>
+		
 
 		<div id="fh5co-started" class="fh5co-bg" style="background-image:url(images/cung-nhin.JPG); min-height: 500px;">
 			<div class="overlay"></div>
@@ -628,11 +605,31 @@
 			</div>
 		</div>
 	</div> -->
+	<div id="fh5co-services" class="fh5co-section-gray">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
+					<h2>Địa điểm</h2>
+				</div>
+			</div>
+			<div class="row animate-box">
+				
+				<div class="col-md-6 " style="position: relative;" >
+					<img src="images/map-nha-hang.PNG" style="width: 100%;"/>
+					<img src="images/qr-nha-hang.jpg" style="width: 50px; z-index: 1;position: absolute; left: 15px;"/>
+					<p class="text-center">Diamond Place, 15A Hồ Văn Huê, P9, Phú Nhuận</p>
+				</div>
+				<div class="col-md-6" style="position: relative;">
+					<img src="images/map-nha.PNG" style="width: 100%;"/>
+					<img src="images/qr-nha.jpg" style="width: 50px; z-index: 1;position: absolute; left: 15px;"/>
+					<p class="text-center">39, khóm I TT Châu Thành, Trà Vinh</p>
+				</div>
+			</div>
 
-		<iframe style="display: none;" src="https://www.youtube.com/embed/2AdH5iocVAg?si=fdeaprRpUpMnb9K0&autoplay=true"
-			title="YouTube video player" frameborder="0"
-			allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-			referrerpolicy="strict-origin-when-cross-origin"></iframe>
+
+		</div>
+	</div>
+		
 		<!-- <footer id="fh5co-footer" role="contentinfo">
 		<div class="container">
 
@@ -682,19 +679,21 @@
 	<script src="js/main.js"></script>
 	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
 	<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
-
-	<script>
-		var map = L.map('map').setView([10.8008405, 106.6726724], 15);
-		L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-			attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-		}).addTo(map);
-		L.marker([10.8008405, 106.6726724]).addTo(map)
-			.bindPopup('Nhà Hàng Tiệc Cưới Diamond Place')
-			.openPopup();
-
-
-
-	</script>
+	<audio  id="myAudio" autoplay>
+		<source src="nhac.mp3"  type="audio/mpeg">
+	  Your browser does not support the audio element.
+	  </audio>
+	  <script>
+		var isStart = false;		
+		window.addEventListener('click', function(event) {
+			if(!isStart){
+			var video = document.getElementById("myAudio");
+			video.play();
+			}
+			isStart = true;
+        });
+	  </script>
+	
 
 </body>
 
