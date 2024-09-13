@@ -1549,6 +1549,7 @@ form label {
   height: 25px;
   cursor: pointer;
   text-decoration: none;
+  
 }
 .fh5co-nav-toggle.active i::before, .fh5co-nav-toggle.active i::after {
   background: #444;
@@ -1640,7 +1641,7 @@ form label {
 }
 @media screen and (max-width: 768px) {
   .fh5co-nav-toggle {
-    display: block;
+    display: none;
   }
 }
 
